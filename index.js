@@ -11,10 +11,13 @@ const port = process.env.PORT || 3000;
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.fphgnhn.mongodb.net/registrationFormDB`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.fphgnhn.mongodb.net/registrationFormDB`)
+    .then(() => {
+        console.log("Connected to MongoDB");
+    })
+    .catch(err => {
+        console.error("Connection error", err);
+    });
 
 const registrationSchema = new mongoose.Schema({ name: String, email: String, password: String });
 
@@ -67,5 +70,5 @@ app.get("/users", async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
