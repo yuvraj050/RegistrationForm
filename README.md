@@ -21,6 +21,9 @@ A simple registration form application.
 4. Access the application:
 
     Open your web browser and go to http://localhost:3000.
+5. Live Demo
+   
+    You can view a live demo of the application at https://reg-form-xi4u.onrender.com.
 
 Technologies Used
 1. Node.js: JavaScript runtime for building server-side applications.
