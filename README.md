@@ -4,23 +4,23 @@ A simple registration form application.
 
 1. Install dependencies:
 
-npm install
+   npm install
 
 2. Set up environment variables:
 
-Create a .env file in the root directory and add the following:
+    Create a .env file in the root directory and add the following:
 
-PORT=3000
-MONGODB_USERNAME=yourMongoDBUsername
-MONGODB_PASSWORD=yourMongoDBPassword
+   PORT=3000
+   MONGODB_USERNAME=yourMongoDBUsername
+   MONGODB_PASSWORD=yourMongoDBPassword
 
 3. Start the server:
 
-npm start
+    npm start
 
 4. Access the application:
 
-Open your web browser and go to http://localhost:3000.
+    Open your web browser and go to http://localhost:3000.
 
 Technologies Used
 1. Node.js: JavaScript runtime for building server-side applications.
