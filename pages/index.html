@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Registration form</title>
+    <style>
+        #card {
+            margin-top: 10%;
+            width: 50%;
+            margin: 10% auto;
+            text-align: center;
+            position: relative;
+            background: rgba(57, 54, 54, 0.7); /* Black with some transparency */
+            border-radius: 20px;
+            backdrop-filter: blur(5px); /* Blurry effect */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Border for 3D effect */
+            box-shadow: 0 20px 40px rgba(213, 245, 70, 0.851); /* Shadow for 3D effect */
+            transition: background-color 0.3s, backdrop-filter 0.3s, transform 0.3s; /* Add transition effect */
+        }
+        
+        #card:hover {
+            background: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
+            backdrop-filter: blur(10px); /* Increase the blur intensity on hover */
+            transform: scale(1.1); /* Scale the card on hover */
+        }
+        
+        .form-outline > input {
+            background-color: #f70d0d77;
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center" style="background-image: url('./src/img.jpg')">
+<section class="text-center">
+    <div class="relative">
+        <div
+                id="radius-shape-1"
+                class="absolute rounded-full shadow-5-strong"
+                style="top: -10rem; left: -10rem; width: 20rem; height: 20rem;"
+        ></div>
+        <div id="radius-shape-2" class="absolute shadow-5-strong"></div>
+    </div>
+    <div class="card mx-4 lg:mx-12 shadow-5-strong" id="card">
+        <div class="card-body px-4 lg:px-10 py-10">
+            <h2 class="text-3xl font-semibold text-yellow-500 mb-8">Registration Form</h2>
+            <form method="post" action="/register" class="text-left">
+                <div class="mb-4">
+                    <label class="block mb-2 text-white font-semibold" for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-input w-full rounded-md bg-gray-300 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 text-white font-semibold" for="email">Email address</label>
+                    <input type="email" id="email"  name="email" class="form-input w-full rounded-md bg-gray-300 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <div class="mb-6">
+                    <label class="block mb-2 text-white font-semibold" for="password">Password</label>
+                    <input type="password" id="password"  name="password" class="form-input w-full rounded-md bg-gray-300 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-red-500 text-white font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 flex justify-center items-center mx-auto">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

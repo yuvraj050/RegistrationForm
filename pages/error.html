@@ -1,0 +1,50 @@
+s<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Error</title>
+    <style>
+        /* Apply glassmorphism effect to the container */
+        .container {
+            background: rgba(57, 54, 54, 0.7); /* Set a semi-transparent white background */
+            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+            border-radius: 15px; /* Rounded corners */
+            padding: 30px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 20px 40px rgba(213, 245, 70, 0.851);
+            transition: background-color 0.3s, backdrop-filter 0.3s;
+        }
+
+        /* Hover effect */
+        .container:hover {
+            background: rgba(0, 0, 0, 0.7); /* Lighten the background color */
+            backdrop-filter: blur(10px); /* Increase the blur intensity */
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        /* Center the container vertically and horizontally */
+        body {
+            margin: 0;
+            height: 100vh; /* Ensure full viewport height */
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span style="color:red;">Registration Error</span></h1>
+        <p><span style="color:white;">There was an error during registration. Please try again.</span></p>
+    </div>
+</body>
+</html>

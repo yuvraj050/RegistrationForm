@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <style>
+        /* Apply glassmorphism effect to the container */
+        .container {
+            background: rgba(57, 54, 54, 0.7); /* Set a semi-transparent red background */
+            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+            border-radius: 15px; /* Rounded corners */
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(213, 245, 70, 0.851);
+            transition: background-color 0.3s, backdrop-filter 0.3s, transform 0.3s; /* Add transition effect */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the container */
+        }
+
+        /* Hover effect */
+        .container:hover {
+            background: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
+            backdrop-filter: blur(15px); /* Increase the blur intensity on hover */
+            transform: translate(-50%, -50%) scale(1.1); /* Scale the container on hover */
+        }
+
+        /* Center the container vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure full viewport height */
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-color: rgba(10, 0, 0, 0.8); /* Set a semi-transparent red background */
+        }
+
+        /* Text color for success message */
+        h1 span {
+            color: red; /* Custom text color */
+        }
+        p span {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span>Registration Successful</span></h1>
+        <p><span>Thank you for registering.</span></p>
+    </div>
+</body>
+</html>
